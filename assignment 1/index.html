@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+      
+      @media screen and (max-width: 2040px) {
+        #content{
+            display:flex;
+        }
+
+        #cover-pic {
+            width: 100%;
+            height:450px;
+            
+            background-image: url("imgs/hero.jpg");
+            background-position: center center;
+            background-size: cover;
+            resize:both;
+            
+        }
+
+        #cover-pic-text {
+            background-color: #38c48c;
+            margin-top: 75px;
+            margin-left:75px;
+            width: fit-content;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 2px;
+            font-size: large;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+
+        }
+
+        .icons {
+            margin-top: 100px;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            text-align: center;
+            padding: 10px;
+            column-gap: 10px;
+            width: 80%;
+            align-self: center;
+        }
+
+        
+
+        .recent-work {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin-top: 50px;
+            align-self: center;
+            width: 80%;
+            padding: 15px;
+            column-gap: 15px;
+
+        }
+
+        .down-section {
+            
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-auto-flow: column;
+            width: 80%;
+            color:white;
+            column-gap: 20px;
+           
+
+        }
+        #from-the-blog {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-top: 30px;
+            width: 80%;
+            align-self: center;
+            column-gap: 15px;
+
+        }
+
+        .list-inline {
+            float: right;
+            margin: 25px;
+
+        }
+
+      }
+
+        @media screen and (max-width:1024px){
+            #header{
+                display: block;
+            }
+
+            .list-inline{
+                display:none;
+            }
+            
+            #menu-text{
+                display:none;
+            }
+
+            #menu{
+                display:flex;
+                flex-direction: row;
+                float:right;
+                
+                
+
+                
+            }
+
+            .icons{
+                display:flex;
+                flex-flow: row wrap;
+                justify-content: flex-start;
+
+            }
+
+            .icons>div{
+                flex-basis: 45%;
+            }
+
+            .recent-work{
+                display:flex;
+                flex-flow: row wrap;
+                justify-content: flex-start;
+            }
+            
+            .recent-work>div{
+                flex-basis:45%;
+            }
+
+            #from-the-blog{
+                display:flex;
+                flex-flow: row wrap;
+                justify-content: flex-start;
+            }
+            #from-the-blog>div{
+                flex-basis:90%;
+            }
+
+            #gray{
+                display: flex;
+            }
+            .down-section{
+                display:flex;
+                flex-flow: row wrap;
+                justify-content: flex-start;
+                margin-left: auto;
+            margin-right: auto;
+                width:70%;
+                align-self: center;
+
+            }
+
+            .down-section>div{
+                flex-basis:90%;
+                
+                
+            }
+        }
+
+        
+        @media screen and (max-width: 480px) {
+            .recent-work-heading {
+            align-self: center;
+            width: 80%;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        
+        .from-the-blog-heading{
+            align-self: center;
+            width: 80%;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+           
+
+            #menu-text{
+            margin-top: 12px;
+        }
+
+            #header{
+                display: block;
+            }
+
+            #cover-pic {
+            width: 100%;
+            height:200px;
+            
+            background-image: url("imgs/hero.jpg");
+            background-position: center center;
+            background-size: cover;
+            resize:both;
+            
+        }
+        #cover-pic-text {
+            background-color: #38c48c;
+            margin:20px auto;
+           
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 2px;
+            font-size: small;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+
+        }
+            
+           
+
+            .list-inline{
+                display:none;
+            }
+            
+            #menu{
+                display:flex;
+                flex-direction: row;
+                float:right;
+                
+                
+
+                
+            }
+            
+            .icons {
+                display: block;
+        }
+
+            .recent-work{
+                display:block;
+               
+            }
+
+            .down-section{  
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            display:block;
+            
+            width: 80%;
+            color:white;
+            
+
+            }
+           
+           .down-section>div{
+            margin-top: 20px;
+           }
+
+            #from-the-blog{
+                display:block;
+            }
+
+
+        }   
+
+        
+        #content {
+            display: flex;
+            flex-direction: column;
+            
+        }
+        #footer{
+            background-color: black;
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            padding-top: 10px;
+
+        }
+        
+        #gray{
+            
+            margin-top: 60px;
+            display:flex;
+
+
+            background-color: rgb(18, 18, 18);
+            width: 100%;
+            
+        }
+
+        
+
+        .down-section>div {
+            width: 80%;
+            
+        }
+
+        .recentwork {
+            max-width: 100%;
+            max-height: 100%;
+
+        }
+
+        
+
+        
+
+        h6 {
+            margin-top: 10px;
+        }
+
+        .recent-work-heading {
+            align-self: center;
+            width: 80%;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .from-the-blog-heading{
+            align-self: center;
+            width: 80%;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+       
+
+
+        
+
+        #header {
+           padding: 20px;
+           
+        }
+
+        
+
+        small {
+            font-size: medium;
+
+        }
+
+        .desc {
+            font-size: small;
+        }
+
+       
+
+      
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <div id="header">
+            <h1 class="display-5">My Website
+                <small class="text-muted">
+                    <div id="menu">
+                        <div><img class="menu-pic" src="imgs/menu.png"  alt="menu"></div>
+                        <div><p id="menu-text">MENU</p></div></div>
+                        
+                        <ul class="list-inline">
+                        <li class="list-inline-item">Home</li>
+                        <li class="list-inline-item">Portfolio</li>
+                        <li class="list-inline-item">Staff</li>
+                        <li class="list-inline-item">Features</li>
+                        <li class="list-inline-item">Blog</li>
+                        <li class="list-inline-item">Content</li>
+                        <li class="list-inline-item">Download</li>
+                    </ul>
+                </small>
+            </h1>
+            
+        </div>
+        <div id="cover-pic">
+            
+            <div id="cover-pic-text">
+                <p>We strive to make all of our creation exquisite.</p>
+            </div>
+        </div>
+        <div class="icons">
+            <div>
+                <img src="imgs/icon-1.png" class="rounded mx-auto d-block" alt="icon-1">
+                <br>
+                <h6>Purpose</h6>
+                <p class="text-muted">Sed tincidunt lacinia enim, eget luctus diam. Nunc vitae nibh maximus, imperdiet
+                    leo quis, sagittis orci. Integer pulvinar imperdiet est.</p>
+
+            </div>
+            <div>
+                <img src="imgs/icon-2.png" class="rounded mx-auto d-block" alt="icon-2">
+                <br>
+                <h6>Quality</h6>
+                <p class="text-muted">Proin nec suscipit velit, et scelerisque risus. Duis euismod tempus sem varius
+                    vulputate. Mauris commodo id sem sit amet condimentum.</small>
+            </div>
+
+            <div>
+                <img src="imgs/icon-3.png" class="rounded mx-auto d-block" alt="icon-3">
+                <br>
+                <h6>Function</h6>
+                <p class="text-muted">Fusce vel nibh nec metus imperdiet cursus vel quis lacus. Phasellus at tortor
+                    condimentum nisi rhoncus faucibus eu non ex.</p>
+            </div>
+            <div>
+                <img src="imgs/icon-4.png" class="rounded mx-auto d-block" alt="icon-4">
+                <br>
+                <h6>Elegant</h6>
+                <p class="text-muted">Integer nibh nunc, iaculis non mauris sed, accumsan tincidunt erat. Curabitur
+                    convallis venenatis velit, quis aliquam magna.</p>
+            </div>
+        </div>
+        <div class="recent-work-heading">
+            <h5 class="text-monospace">RECENT WORK</h5>
+            <hr>
+        </div>
+        <div class="recent-work">
+
+            <div><img class="recentwork" src="imgs/bike-400x340.jpg" alt="bike">
+                <h6><strong>Green High</strong></h6>
+                <p class="text-muted">Beautiful, Travel</p>
+            </div>
+            <div><img class="recentwork" src="imgs/surf-400x340.jpg" alt="surf">
+                <h6><strong>Salt of the Earth</strong></h6>
+                <p class="text-muted">Beautiful, Travel</p>
+            </div>
+            <div><img class="recentwork" src="imgs/hills-400x340.jpg" alt="hills">
+                <h6><strong>Mountain High</strong></h6>
+                <p class="text-muted">Travel</p>
+            </div>
+            <div><img class="recentwork" src="imgs/path-400x340.jpg" alt="path">
+                <h6><strong>When a tree falls</strong></h6>
+                <p class="text-muted">Travel</p>
+            </div>
+        </div>
+        <div class="from-the-blog-heading">
+            <h5 class="text-monospace">From The Blog</h5>
+            <hr>
+        </div>
+
+        <div id="from-the-blog">
+
+            <div><img class="recentwork" src="imgs/cow-640x340.jpg" alt="cow">
+                <h6><strong>Green High</strong></h6>
+                <p class="text-muted">Posted on May 2. 2020</p>
+                <p class="desc"> Sed tincidunt lacinia enim, eget luctus diam. Nunc vitae nibh maximus, imperdiet
+                    leo quis, sagittis orci. Integer pulvinar imperdiet est.</p>
+            </div>
+            <div><img class="recentwork" src="imgs/sunrise-640x340.jpg" alt="cow">
+                <h6><strong>Green High</strong></h6>
+                <p class="text-muted">Posted on November 23. 2021</p>
+                <p class="desc">Sed tincidunt lacinia enim, eget luctus diam. Nunc vitae nibh maximus, imperdiet
+                    leo quis, sagittis orci. Integer pulvinar imperdiet est.</p>
+            </div>
+            <div><img class="recentwork" src="imgs/grass-640x340.jpg" alt="grass">
+                <h6><strong>Green High</strong></h6>
+                <p class="text-muted">Posted on December 5. 2011</p>
+                <p class="desc">Sed tincidunt lacinia enim, eget luctus diam. Nunc vitae nibh maximus, imperdiet
+                    leo quis, sagittis orci. Integer pulvinar imperdiet est.</p>
+            </div>
+        </div>
+
+        <div id="gray">
+            <div class="down-section">
+                <div>
+                    <h3>My Website</h3>
+                    <br>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Dictumst vestibulum rhoncus est pellentesque elit. Mus mauris
+                        vitae ultricies leo integer malesuada. Volutpat maecenas volutpat blandit aliquam. Vitae et leo
+                        duis ut diam quam nulla.</p>
+                </div>
+                <div>
+                    <h3>Recent Posts</h3>
+                    <hr>
+                    <p>How Now</p>
+                    <hr>
+                    <p>Adrift by Simon Christen</p>
+                    <hr>
+                    <p>A walk In The Park</p>
+                    <hr>
+                    <p>Time To Think</p>
+                    <hr>
+                    <p>Field of Dreams</p>
+                </div>
+                <div>
+                    <h3>Recent Work</h3>
+                    <hr>
+                    <p>Beautiful</p>
+                    <hr>
+                    <p>Travel</p>
+                    <hr>
+                    <p>Surreal</p>
+                    <hr>
+                    <p>Thoughts</p>
+                    <hr>
+                    <p>Unique</p>
+                </div>
+            </div>
+        </div>
+        <div id="footer"><p>&#9400; Nikola Cvetkovic</p></div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src=""></script>
+</body>
+
+</html>
